@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap');
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+body{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+}
+header{
+    border-bottom: rgb(59, 199, 209) 5px solid;
+    grid-template-columns: 12% 76% 12%;
+    width: 100%;
+    display: grid;
+    background: rgba(255,255,255,0.97); 
+    position: fixed;
+    z-index: 100;
+}
+.heade{
+    grid-column: 2/3;
+    display: flex;
+    z-index: 100;
+}
+.botonmenu{
+    display: none;
+}
+h1{
+    width: 40%;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5px;
+    padding-top: 5px;
+    color: rgb(35,38,38);
+}
+header ul{
+    width: 60%;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+header ul li{
+    padding: 20px 0 0 0;
+}
+header ul a:link{
+    text-decoration: none;
+}
+.separ{
+    padding: 0 30px 0 30px;
+    margin: 0 30px 0 30px;
+    border-left: rgb(59, 199, 209) 2px solid;
+    border-right: rgb(59, 199, 209) 2px solid;
+}
+.mensaje{
+    grid-row: 1/2;
+    padding-left: 12%;
+    padding-top: 80px;
+    background: rgb(35, 38, 38);
+    color: rgb(59, 199, 209);
+    margin-bottom: 5px;
+    padding-bottom: 20px;
+    padding-right: 12%;
+}
+.banner{
+    padding-top: 40px;
+    grid-row: 2/3;
+    background: rgb(35, 38, 38);
+    grid-template-columns: 12% 40% 4% 32% 12%;
+    display: grid;
+}
+.imagen1{
+    grid-column: 2/3;
+}
+.degra{
+    width: 100%;
+    position: relative;
+}
+.degra:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(-90deg, rgba(255,255,255,0), rgba(255,255,255,0), rgb(35,38,38));
+}
+.uno{
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+    object-position: top left;
+}
+.contenido1{
+    color: white;
+    grid-column: 4/5;
+    padding-bottom: 25px;
+}
+.titulo{
+    display: flex;
+}
+h2{
+    font-weight: 500;
+    font-size: 32px;
+}
+h3{
+    font-weight: 300;
+    font-size: 32px;
+}
+.fecha{
+    display: flex;
+    border: rgb(59, 199, 209) 3px solid;
+    padding: 4px 9px 4px 9px;
+    margin-right: 10px;
+}
+.nombreact{
+    padding: 4px 9px 4px 1px;
+    border-bottom: rgb(59, 199, 209) 3px solid;
+}
+.descripact{
+    padding: 20px 0 20px 0;
+    border-bottom: rgb(59, 199, 209) 3px solid;
+    margin-bottom: 15px;
+}
+.vermas p{
+    color: white;
+    float: right;
+    font-weight: 500;
+    padding: 0 3px 0 3px;
+    border-bottom: rgb(59, 199, 209) 3px solid;
+}
+.vermas p:hover{
+    color: rgb(35,38,38);
+    background:rgb(59, 199, 209);
+}
+.tra{
+    grid-column: 1/6;
+    position: relative;  
+}
+.transi{
+    position: absolute;
+    top: -85px;
+    left: 50%;
+    z-index: 1;
+    width: 1400px;
+    transform: translate(-50%, 0);
+    pointer-events: none;
+}
+main{
+    grid-template-columns: 12% 22% auto 22% auto 22% 12%;
+    grid-row: 3/4;
+    z-index: 2;
+    display: grid;
+}
+.mercado{
+    grid-column: 2/7;
+    margin-bottom: 35px;
+    display: flex;
+}
+.titulomer h2{
+    color: rgb(35, 38, 38);
+    border-bottom: rgb(59, 199, 209) 3px solid;
+}
+.titulomer h2:hover{
+    color: white;
+    padding: 0 3px 0 3px;
+    background:  rgb(59, 199, 209);
+}
+.item1{
+    grid-column: 2/3;
+}
+.item2{
+    grid-column: 4/5;
+}
+.item3{
+    grid-column: 6/7;
+}
+h4{
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(59, 199, 209);
+    padding-bottom: 15px;
+}
+.nombreitem{
+    display: none;
+}
+.itemfoto{
+    width: 100%;
+    height: 180px;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-bottom: rgb(154, 233, 237) 5px solid;
+}
+.cajaitem{
+    background: rgb(154, 233, 237);
+}
+.precio{
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding: 7px 0 7px 0;
+}
+.precioitem{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom: white 5px solid;
+    border-right: white 5px solid;
+    border-left: white 5px solid;
+    width: 70%;
+}
+.datositem{
+    padding: 10px 0 100px 0;
+    text-align: center;
+    font-weight: 500;
+    line-height: 22px;
+}
+.ova{
+    grid-column: 1/8;
+    position: relative;
+    width: 100%;
+    
+}
+.ova1{
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    z-index: 5;
+    width: 1600px;
+    transform: translate(-50%, 0);
+    pointer-events: none;
+}
+.ova2{
+    position: absolute;
+    top: -65px;
+    left: 50%;
+    z-index: 6;
+    width: 1600px;
+    transform: translate(-50%, 0);
+    pointer-events: none;
+}
+.ova3{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    z-index: 7;
+    width: 1600px;
+    transform: translate(-50%, 0);
+    pointer-events: none;
+}
+.transporte{
+    grid-row: 4/5;
+    z-index: 10;
+    grid-template-columns: 12% 38% 38% 12%;
+    display: grid;
+}
+.nombretra{
+    grid-column: 2/4;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.nombretran h2{
+    color: white;
+    padding-bottom: 4px;
+    border-bottom: rgb(59, 199, 209) 3px solid;
+    padding: 0 3px 4px 3px;
+    margin-bottom: 30px;
+}
+.nombretran h2:hover{
+    background:rgb(59, 199, 209);
+    color: rgb(35, 38, 38);
+}
+.contactos{
+    grid-row: 5/6;
+    grid-column: 1/5;
+    grid-template-columns: 12% 38% 38% 12%;
+    display: grid;
+    background: rgb(35, 38, 38);
+}
+.contacto1{
+    grid-column: 2/3;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 60px;
+}
+.contacto2{
+    grid-column: 3/4;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 60px;
+}
+.maps{
+    width: 100%;
+}
+.connomb{
+    text-align: center;
+    padding-top: 10px ;
+    border-top: rgb(59, 199, 209) 3px solid;
+}
+.datoscont{
+    text-align: center;
+    color: white;
+    line-height: 22px;
+}
+footer{
+    padding: 40px 0 20px 0;
+    grid-row: 5/6;
+    grid-template-columns: 12% 38% 38% 12%;   
+    background: rgb(154, 233, 237); 
+    display: grid;
+}
+.contacto{
+    grid-column: 2/3;
+}
+.boton a{
+    display: inline-block;
+    padding: 10px;
+    background: rgb(35,38,38);
+    text-decoration: none;
+    color: white;
+}
+.boton a:hover{
+    padding: 10px;
+    background: white;
+    text-decoration: none;
+    color:rgb(59, 199, 209);
+    font-weight: 500;
+}
+.slogo{
+    display: inline-block;
+    margin: 10px 15px 0 0;
+    height: 28px;
+}
+.relacionados{
+    grid-column: 3/4;
+}
+.titulore{
+    font-weight: 500;
+}
+.relacionados a{
+    color: rgb(35, 38, 38);
+    border-bottom: white 2px solid;
+}
+.solo{
+    padding-top: 10px;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+.final{
+    grid-column: 2/4;
+    border-bottom:rgb(35, 38, 38) 3px solid;
+    padding-top: 20px;
+}
+@media (max-width: 960px) {
+    .separ{
+        padding: 0 10px 0 10px;
+        margin: 0 10px 0 10px;
+    }
+}
+@media (max-width: 640px) {
+    
+    h1{
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .separ{
+        padding: 0;
+        margin: 0;
+        border-left: none;
+        border-right: none;
+    }
+    header ul{
+        width: 100%;
+        display: block;
+        text-align: right;
+        overflow:hidden;
+    }
+    header ul li{
+        padding: 10px 0 10px 0;
+        border-top: rgb(59, 199, 209) 2px solid;
+    }
+    .heade{
+        display: block;
+    }
+    .heade .menuu{
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+    .logo{
+        float: left;
+    }
+    .iconomenu{
+        padding: 25px 0 0 0;
+        position: relative;
+        float: right;
+        cursor: pointer;
+    }
+    .icono{
+        background: rgb(35,38,38);
+        display: block;
+        height: 2px;
+        width: 18px;
+        position: relative;
+    }
+    .icono:before{
+        background: rgb(35,38,38);
+        display: block;
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 5px;
+    }
+    .icono:after{
+        background: rgb(35,38,38);
+        display: block;
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: -5px;
+    }
+    .botonmenu{
+        display: none;
+    }
+    .heade .botonmenu:checked ~ .menuu{
+        max-height: 150px;
+    }
+    .mensaje h3{
+        font-size: 25px;
+    }
+    .banner{
+        grid-template-columns: 12% 76% 12%;
+        display: grid;
+    }
+    .imagen1{
+        grid-column: 2/3;
+        border-top: rgb(59, 199, 209) 5px solid;
+    }
+    .degra:before{
+        background: linear-gradient( rgba(255,255,255,0), rgba(255,255,255,0), rgb(35,38,38));
+    }
+    .contenido1{
+        grid-column: 2/3;
+    }
+    .descripact{
+        border-bottom: none;
+    }
+    main{
+        grid-template-columns: 12% 76% 12%;
+        display: grid;
+    }
+    .item1{
+        grid-column: 2/3;
+        grid-template-columns: 45% 2% 53%;
+        display: grid;
+    }
+    .item2{
+        grid-column: 2/3;
+        grid-template-columns: 45% 2% 53%;
+        display: grid;
+        padding-top: 20px;
+    }
+    .item3{
+        grid-column: 2/3;
+        grid-template-columns: 45% 2% 53%;
+        display: grid;
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+    main img{
+        grid-column: 1/2;
+    }
+    main h4{
+        display: none;
+    }
+    main .cajaitem{
+        grid-column: 3/4;
+    }
+    .nombreitem{
+        display: inline-block;
+        border-top: rgb(154, 233, 237) 5px solid;
+        border-bottom: rgb(154, 233, 237) 5px solid;
+        background: white;
+        padding: 5px 5px 5px 10%;
+    }
+    .precioitem{
+        text-align: left;
+        display: block;
+        border-left: none;
+        border-bottom: none;
+        border-right: none;
+        width: auto;
+        padding-left: 10%;
+        padding-top: 25px;
+    }
+    .precio{
+        text-align: left;
+        padding: 0;
+        font-weight: 500;
+    }
+    .datositem{
+        text-align: left;       
+        padding: 10px 0 0 10%;
+    }
+    .itemfoto{
+        margin: 0;
+        border-top: rgb(154, 233, 237) 5px solid;
+        border-bottom: none;
+    }
+    .transporte{
+        grid-template-columns: unset;
+        grid-template-rows: unset;
+    }
+    .contactos{
+        grid-template-columns: 12% 76% 12%;
+        display: grid;
+    }
+    .contacto1{
+        grid-column: 2/3;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .contacto2{
+        grid-column: 2/3;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .maps{
+        height: 300px;
+    }
+    .relacionados a{
+        font-size: 14px;
+    }
+    
+}
