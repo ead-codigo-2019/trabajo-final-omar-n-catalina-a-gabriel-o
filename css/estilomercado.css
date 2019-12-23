@@ -77,7 +77,7 @@ footer{
         grid-template-columns: 45% 2% 53%;
         display: grid;
         padding-top: 20px;
-        padding-bottom: 60px;
+        padding-bottom: 70px;
     }
     .main3{
         grid-template-columns: 12% 76% 12%;
@@ -92,6 +92,7 @@ footer{
         grid-column: 2/3;
         grid-template-columns: 45% 2% 53%;
         display: grid;
-        padding-bottom: 60px;
+        padding-top: 20px;
+        padding-bottom: 70px;
     }
 }
